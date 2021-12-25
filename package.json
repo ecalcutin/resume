@@ -8,7 +8,8 @@
     "docker:build": "docker build -t ecalcutin/kalkutin.dev-website:latest . && docker push ecalcutin/kalkutin.dev-website:latest",
     "start": "http-server dist",
     "ncu": "npm-check-updates",
-    "test": "jest"
+    "test": "jest",
+    "test:e2e": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "@types/webpack-dev-server": "^4.5.0",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
+    "cypress": "^9.2.0",
     "html-webpack-plugin": "^5.5.0",
     "http-server": "^14.0.0",
     "jest": "^27.4.5",
